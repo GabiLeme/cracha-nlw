@@ -1,0 +1,94 @@
+<!--
+  HTML
+
+  Hyper Text - Hiper Texto
+  é um testo com link
+
+  Markup - marcações
+  Tags
+
+  Language
+  Sintaxe - regra da linguagem
+
+-->
+
+<!DOCTYPE html>
+<!--Define que estamos utilizando HTML 5-->
+
+<html>
+  <head>
+    <title>Gabriela Leme - Do While 2021</title>
+
+    <!--Link para pagina de estilo css-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--codigo font ROBOTO gerado pelo https://fonts.google.com/specimen/Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2? família = Roboto: wght @ 400; 700 & display = swap "
+      rel=" stylesheet "
+    />
+  </head>
+  <body>
+    <!--
+    Usar tags semanticas que ajudam na leitura do codigo
+			Ex: main poderia ser div, mas colocando main sabemos que é a divisão principal
+    -->
+
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <!--src=source - onde a imagem está alt=alternativa - descrever a imagem-->
+          <!--alt é utilizado quando a imagem não é encontrada, para acessibilidade e para buscadores. Quanto mais detalhado melhor-->
+          <span>
+            <img src="images/build.svg" alt="Selo Rocketseat" />
+          </span>
+          <img
+            id="userImage"
+            src="http://lorempixel.com/185/185/people/"
+            alt="Foto Gabriela Leme"
+          />
+        </div>
+        <!--class está classificando o tipo de div, nesse caso conteudo-->
+        <!--id é para o java consiga acessar esse elemento através do DOM-->
+        <h1 id="userName">Gabriela Leme</h1>
+        <a id="userLink" href="https://www.github.com" target="_blank">
+          <img src="images/github.svg" alt="icone github" />
+          <span id="userLogin">@gabi_p.leme</span>
+        </a>
+
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
+
+        <ul id="socialLinks">
+          <!--lista-->
+          <li class="youtube">
+            <a href="https:/youtube.com" target="_blank">
+              <img src="images/youtube.svg" alt="icone youtube" />
+
+              <!--target = alvo "_blank"=nova pagina **** NAO ESTA FUNCIONANDO-->
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="https://www.instagram.com/gabi_p.leme/" target="_blank">
+              <img src="images/intagram.svg" alt="icone instagram" />
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="https:/facebook.com" target="_blank">
+              <img src="images/facebook.svg" alt="icone facebook" />
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https:/twitter.com" target="_blank">
+              <img src="images/twitter.svg" alt="icone twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

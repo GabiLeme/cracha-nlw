@@ -1,0 +1,98 @@
+/*CSS - Cascating StyleSheet (Folha de estilo em cascata)
+      Ordem de aparição no meu estilo
+      O elemento que entra por ultimo tem mais força
+
+      Estilo das tags do html*/
+
+* {
+  /* essa configuração vale para todos os elementos*/
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%); /*--grey é uma variavel*/
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(images/background.png);
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem; /*1 rem = 16px Nesse caso 10rem =160px*/
+  margin: 11.5rem auto 0;
+
+  position: relative; /*para ser o padrão de topo do span*/
+}
+
+.avatar span {
+  /*dentro do .avatar procura o span que tem dentro*/
+  position: absolute;
+  /*permite posição da imagem sobreposição, mas fica absoluto na pagina inteira
+  entende que o topo é o topo da pagina*/
+  top: -15px;
+  z-index: 1; /*define a posição da img span no eixo Z, nesse caso garante que fique sobre a foto*/
+}
+
+/*o sinal de > significa que só afeta-rá as img do primeiro niver*/
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover; /*ajusta a imagem para não ficar distorcida*/
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
