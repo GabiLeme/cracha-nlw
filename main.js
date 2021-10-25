@@ -1,9 +1,9 @@
 const linksSocialMedia = {
   github: 'GabiLeme',
-  youtube: 'maykbrito',
-  facebook: 'maykbrito',
-  instagram: 'maykbrito',
-  twitter: 'maykbrito'
+  youtube: 'channel/UC0ogFToUn3Ks-auxR9qjsqw',
+  facebook: 'gabriela.leme.5',
+  instagram: 'gabi_p.leme',
+  twitter: 'GabrielaPLeme'
 }
 
 function changeSocialMediaLinks() {
